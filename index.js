@@ -28,7 +28,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:8000",
+        url: "https://nodejs-assignment-0zxb.onrender.com",
       },
     ],
   },
