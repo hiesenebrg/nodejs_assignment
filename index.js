@@ -31,6 +31,17 @@ const options = {
         url: "https://nodejs-assignment-0zxb.onrender.com",
       },
     ],
+    components: {
+        securitySchemes: {
+          bearerAuth: {
+            type: 'apiKey',
+            name: 'Authorization', // Use 'Authorization' as the header name
+            scheme: 'bearer',
+            in: 'header',
+          },
+        },
+      },
+    
   },
   apis: [ "./routes/index.js","./routes/api/index.js","./routes/api/user.js","./routes/api/fetchdata.js"],
   followRedirects: true

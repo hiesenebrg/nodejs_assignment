@@ -20,7 +20,7 @@ const fetchdataController = require("../../controllers/api/fetchdata");
 
 /**
  * @swagger
- * /api/fetchingdata/fetchdata/{cat}:
+ * /api/fetchingdata//fetchdata/{cat}:
  *   get:
  *     summary: Fetch data from public APIs based on category
  *     description: Fetches data from public APIs based on the provided category and returns it
@@ -57,18 +57,14 @@ const fetchdataController = require("../../controllers/api/fetchdata");
  *           type: integer
  *         required: true
  *         description: The number of entries to return
- *     components:
- *         securitySchemes:
- *           bearerAuth:            # arbitrary name for the security scheme
- *               type: http
- *               scheme: bearer
- *               bearerFormat: JWT
  *     security:
-  *      - bearerAuth: [] 
+ *       - bearerAuth: []
  *     responses:
  *       200:
  *         description: Data fetched successfully based on category and range
  */
+
+
 
 router.get(
   "/fetchdata",
